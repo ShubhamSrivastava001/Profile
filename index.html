@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Subham K Srivastava — Developer &amp; Designer</title>
+  <meta name="description" content="Portfolio of Subham K Srivastava — .NET developer, UI/UX enthusiast, and freelance web developer. Services: Web apps, APIs, consultancy." />
+  <!-- Tailwind CDN for quick styling (replace with build pipeline for production) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* small helper styles */
+    .glass { background: rgba(255,255,255,0.6); backdrop-filter: blur(6px); }
+  </style>
+  <style>
+    nav a:focus {
+      outline: none !important;
+      box-shadow: none !important;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+  <!-- NAV -->
+  <header class="sticky top-0 z-40 bg-white/80 glass border-b">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="#hero" class="flex items-center gap-3">
+          <img src="" alt="logo" class="w-10 h-10 rounded-full bg-gray-200" />
+          <div>
+            <div class="font-semibold">Subham K Srivastava</div>
+            <div class="text-xs text-gray-500">.NET Developer · Web & API Specialist</div>
+          </div>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#about" class="hover:text-teal-600">About</a>
+          <a href="#services" class="hover:text-teal-600">Services</a>
+          <a href="#projects" class="hover:text-teal-600">Projects</a>
+          <a href="#testimonials" class="hover:text-teal-600">Testimonials</a>
+          <a href="#contact" class="bg-teal-500 text-white px-4 py-2 rounded-lg shadow hover:shadow-md">Contact</a>
+          <a href="https://www.linkedin.com/in/subham-k-srivastava" target="_blank" class="flex items-center gap-1 text-gray-700 hover:text-teal-600">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 11.268h-3v-5.604c0-1.337-.027-3.059-1.865-3.059-1.865 0-2.151 1.459-2.151 2.963v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.562 2.837-1.562 3.033 0 3.594 1.939 3.594 4.461v5.734z"/></svg>
+  </a>
+</nav>
+        <div class="md:hidden">
+          <button id="menuBtn" class="p-2 rounded-md border">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- mobile menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t">
+      <div class="px-4 py-3 flex flex-col gap-2">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact" class="bg-teal-500 text-white px-3 py-2 rounded">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="pt-12 pb-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-8">
+      <div class="flex-1">
+        <h1 class="text-3xl sm:text-4xl font-extrabold">Hi — I'm Subham. I build reliable web apps using .NET & modern frontends.</h1>
+        <p class="mt-4 text-gray-600 max-w-xl">I create maintainable backend APIs, responsive user interfaces, and help teams introduce clean architecture and dependency injection practices.</p>
+        <div class="mt-6 flex gap-3">
+          <a href="#projects" class="px-4 py-2 bg-teal-600 text-white rounded shadow">See my work</a>
+          <a href="#contact" class="px-4 py-2 border rounded">Get in touch</a>
+        </div>
+        <div class="mt-6 text-sm text-gray-500">Availability: Open to freelance & full-time roles.</div>
+      </div>
+      <div class="w-full md:w-96">
+        <div class="bg-white rounded-2xl p-6 shadow">
+          <img src="" alt="profile" class="w-36 h-36 rounded-full mx-auto bg-gray-200" />
+          <div class="text-center mt-4">
+            <div class="font-semibold">Subham K Srivastava</div>
+            <div class="text-xs text-gray-500">Senior .NET Developer</div>
+          </div>
+          <ul class="mt-4 text-sm space-y-2 text-gray-600">
+            <li>7+ years building enterprise web apps</li>
+            <li>Specialties: ASP.NET Core, EF Core, REST APIs, DI</li>
+            <li>Also: React, Tailwind, CI/CD, Azure</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-12 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-2xl font-semibold">About Me</h2>
+      <p class="mt-3 text-gray-600">Write 3–4 short paragraphs about your background, approach, and what makes you different. Example: I enjoy building clean, tested code and helping teams ship faster.</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+        <div>
+          <h3 class="font-medium">Education</h3>
+          <p class="text-sm text-gray-600">Your degree, university, year.</p>
+        </div>
+        <div>
+          <h3 class="font-medium">Tooling</h3>
+          <p class="text-sm text-gray-600">ASP.NET Core · C# · EF Core · SQL Server · Azure · Git</p>
+        </div>
+		<div>
+          <h3 class="font-medium">Tooling</h3>
+          <p class="text-sm text-gray-600">ASP.NET Core · C# · EF Core · SQL Server · Azure · Git</p>
+        </div>
+		<div>
+          <h3 class="font-medium">Tooling</h3>
+          <p class="text-sm text-gray-600">ASP.NET Core · C# · EF Core · SQL Server · Azure · Git</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-semibold">Services</h2>
+      <p class="text-gray-600 mt-2">What I can help you with — short bullets below.</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+        <div class="bg-white p-6 rounded-2xl shadow">
+          <h3 class="font-semibold">Web Applications</h3>
+          <p class="mt-2 text-sm text-gray-600">Full-stack web apps built with ASP.NET Core and modern frontends.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow">
+          <h3 class="font-semibold">APIs & Integrations</h3>
+          <p class="mt-2 text-sm text-gray-600">Design and implementation of RESTful APIs, authentication, and third-party integrations.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow">
+          <h3 class="font-semibold">Architecture & Mentoring</h3>
+          <p class="mt-2 text-sm text-gray-600">Guidance on clean architecture, DI, testing, and CI/CD.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="py-12 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-semibold">Selected Projects</h2>
+      <p class="text-gray-600 mt-2">A few projects with brief notes and links to code or live demos.</p>
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Example project card -->
+        <article class="bg-white rounded-2xl p-6 shadow">
+          <h3 class="font-semibold">Project Name</h3>
+          <p class="text-sm text-gray-600 mt-2">Short description, tech stack, your role, result or metrics (if any).</p>
+          <div class="mt-4 flex gap-2 text-xs">
+            <a href="#" class="px-3 py-1 border rounded">Live</a>
+            <a href="#" class="px-3 py-1 border rounded">Code</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="py-12">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-semibold">Testimonials</h2>
+      <p class="text-gray-600 mt-2">What clients or colleagues say.</p>
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <blockquote class="bg-white p-6 rounded-2xl shadow">
+          <p class="text-gray-700">"Great to work with — delivered on time and the code is well structured."</p>
+          <footer class="mt-4 text-sm text-gray-500">— Client Name, Company</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-12 bg-white">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="text-2xl font-semibold">Contact</h2>
+      <p class="text-gray-600 mt-2">Tell me about your project — I'll get back within 48 hours.</p>
+
+      <form id="contactForm" class="mt-6 grid grid-cols-1 gap-4">
+        <input name="name" placeholder="Your name" class="p-3 border rounded" required />
+        <input name="email" type="email" placeholder="Email" class="p-3 border rounded" required />
+        <input name="subject" placeholder="Subject" class="p-3 border rounded" />
+        <textarea name="message" placeholder="Message" rows="5" class="p-3 border rounded" required></textarea>
+        <div>
+          <button type="submit" class="px-4 py-2 bg-teal-600 text-white rounded">Send message</button>
+        </div>
+      </form>
+
+      <div class="mt-6 text-sm text-gray-600">Or reach me directly on <a href="tel:+911234567890" class="text-teal-600">+91 12345 67890</a>, <a href="mailto:you@example.com" class="text-teal-600">you@example.com</a>, or connect on <a href="https://www.linkedin.com/in/subham-k-srivastava" target="_blank" class="inline-flex items-center gap-1 text-teal-600"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 11.268h-3v-5.604c0-1.337-.027-3.059-1.865-3.059-1.865 0-2.151 1.459-2.151 2.963v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.562 2.837-1.562 3.033 0 3.594 1.939 3.594 4.461v5.734z"/></svg>LinkedIn</a>.</div>
+    </div>
+  </section>
+
+  <footer class="py-8 text-center text-sm text-gray-500">
+    © <span id="year"></span> Subham K Srivastava — Built with care
+  </footer>
+
+  <!-- Floating WhatsApp button (example) -->
+  <a href="https://wa.me/911234567890" target="_blank" aria-label="WhatsApp" class="fixed left-4 bottom-6 bg-green-500 text-white px-4 py-3 rounded-full shadow-lg flex items-center gap-2">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.93 11.93 0 0 0 12 0C5.37 0 0 5.37 0 12a11.93 11.93 0 0 0 3.48 8.52L0 24l3.48-3.48A11.93 11.93 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.2-1.25-6.19-3.48-8.52zM12 21.5c-1.9 0-3.74-.5-5.34-1.44L4 19l.94-2.66A9.5 9.5 0 1 1 21.5 12 9.49 9.49 0 0 1 12 21.5z"/></svg>
+    <span class="hidden sm:inline">Start Chat</span>
+  </a>
+
+  <script>
+    // small interactivity
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('menuBtn').addEventListener('click', () => {
+      const m = document.getElementById('mobileMenu');
+      m.classList.toggle('hidden');
+    });
+
+    // contact form demo (replace with your backend or form provider)
+    document.getElementById('contactForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Thanks! This demo form does not send messages. Replace with your email/API.');
+      e.target.reset();
+    });
+  </script>
+</body>
+</html>
