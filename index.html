@@ -54,13 +54,10 @@
       <h1 id="hero-title">Hi, I'm Shubham.<span>.NET Developer.</span></h1>
       <p class="hero-copy canva-text">I build reliable, scalable applications that make complex ideas feel simple. From robust APIs to thoughtful user experiences, I love turning good ideas into great software.</p>
       <div class="hero-actions"><a class="btn btn-primary canva-button" href="#projects">Explore my work <i data-lucide="arrow-up-right"></i></a> <a class="btn btn-secondary canva-button" href="#contact">Get in touch <i data-lucide="arrow-right"></i></a>
-      <a
-    class="btn btn-secondary canva-button"
-    href="resume/Shubham-Srivastava-Resume.pdf"
-    download="Shubham-Srivastava-Resume.pdf"
-  >
-    Download Resume <i data-lucide="download"></i>
-  </a>
+      <div id="resumeModal" style="display:none;">
+  <input type="password" id="resumePin" placeholder="Enter PIN">
+  <button onclick="verifyPin()">Download</button>
+</div>
       </div>
      </div>
      <div class="hero-visual canva-card"><img id="developer-workspace-image" class="canva-image" src="https://raw.githubusercontent.com/ShubhamSrivastava001/Profile/refs/heads/main/developerphoto.avif" alt="A laptop displaying code on a wooden desk, in a dimly lit workspace." loading="lazy">
@@ -252,6 +249,16 @@
       temp.remove();
       document.getElementById('copy-status').textContent=copied?'Email address copied!':'Could not copy automatically. Please select the address above.';
     });
+   function verifyPin() {
+    const pin = document.getElementById("resumePin").value;
+
+    if (pin === "1234") {
+        window.location.href =
+          "resume/Shubham-Srivastava-Resume.pdf";
+    } else {
+        alert("Incorrect PIN");
+    }
+}
   </script>
  </body>
 </html>
